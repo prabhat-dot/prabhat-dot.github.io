@@ -1,76 +1,240 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Prabhat Sharma — AI Developer</title>
+  <meta name="description" content="Explore Prabhat Sharma's AI and ML projects including emotion detection, SEO automation, and NLP systems.">
+  <meta property="og:title" content="Projects | Prabhat Sharma">
+  <meta property="og:description" content="AI and ML projects — from emotion detection to SEO intelligence platforms.">
+  <meta property="og:type" content="website">
 
-<title>Projects | Prabhat</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/script.js" defer></script>
 </head>
-
 <body>
 
 <nav>
-
-<h2 class="logo">Prabhat</h2>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
+  <h2 class="logo">Prabhat</h2>
+  <ul id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section>
-
-<h1 class="title">Projects</h1>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<img src="images/project1.jpg">
-
-<h3>Emotion Detection</h3>
-
-<p>Multimodal AI system detecting emotions from text, images and video.</p>
-<a href="#">View Project</a>
-
+<!-- Hero -->
+<div class="projects-hero">
+  <div class="section-label reveal">Portfolio</div>
+  <h1 class="title reveal reveal-delay-1">Selected <span>Projects</span></h1>
+  <p style="color:var(--text-secondary); max-width:560px; font-size:1.05rem;" class="reveal reveal-delay-2">
+    A collection of AI systems, ML models, and intelligent applications built to solve real-world challenges.
+  </p>
 </div>
 
-<div class="project-card">
+<!-- Projects Grid -->
+<section style="padding-top: 1rem;">
+  <div class="projects-grid">
 
-<img src="images/project2.jpg">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">🤖</div>
+      <!-- <img src="images/project1.jpg" class="project-img" alt="Emotion Detection System"> -->
+      <div class="project-body">
+        <div class="project-number">01</div>
+        <h3>Emotion Detection System</h3>
+        <p>A multimodal AI system that detects human emotions from text, facial images, and video streams using ensemble deep learning models. Achieves 91% accuracy on benchmark datasets.</p>
+        <div class="project-tags">
+          <span class="tag green">PyTorch</span>
+          <span class="tag green">OpenCV</span>
+          <span class="tag">BERT</span>
+          <span class="tag">CNN</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-<h3>AI SEO Platform</h3>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">🔍</div>
+      <!-- <img src="images/project2.jpg" class="project-img" alt="AI SEO Platform"> -->
+      <div class="project-body">
+        <div class="project-number">02</div>
+        <h3>AI SEO Intelligence Platform</h3>
+        <p>End-to-end automated SEO auditing platform with keyword clustering, content gap analysis, and competitor intelligence — powered by custom NLP pipelines.</p>
+        <div class="project-tags">
+          <span class="tag green">Python</span>
+          <span class="tag green">NLP</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-<p>Automated SEO auditing, keyword clustering and competitor analysis.</p>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">📝</div>
+      <!-- <img src="images/project3.jpg" class="project-img" alt="Text Summarization"> -->
+      <div class="project-body">
+        <div class="project-number">03</div>
+        <h3>CPU-Efficient Text Summarizer</h3>
+        <p>An optimized NLP summarization model designed for CPU-only environments. Uses ONNX quantization and distillation techniques to achieve near-GPU performance.</p>
+        <div class="project-tags">
+          <span class="tag green">Transformers</span>
+          <span class="tag green">ONNX</span>
+          <span class="tag">HuggingFace</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-<a href="#">View Project</a>
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">💬</div>
+      <div class="project-body">
+        <div class="project-number">04</div>
+        <h3>Conversational AI Assistant</h3>
+        <p>A domain-specific chatbot built with LangChain and RAG architecture. Provides accurate, context-aware responses from enterprise knowledge bases.</p>
+        <div class="project-tags">
+          <span class="tag green">LangChain</span>
+          <span class="tag green">RAG</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">FAISS</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <!-- Project 5 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">📊</div>
+      <div class="project-body">
+        <div class="project-number">05</div>
+        <h3>Market Sentiment Analyzer</h3>
+        <p>Real-time financial sentiment analysis tool that processes news articles, social media, and earnings calls to generate market sentiment scores.</p>
+        <div class="project-tags">
+          <span class="tag green">FinBERT</span>
+          <span class="tag green">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">FastAPI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-<div class="project-card">
+    <!-- Project 6 -->
+    <div class="project-card">
+      <div class="project-img-placeholder">🖼️</div>
+      <div class="project-body">
+        <div class="project-number">06</div>
+        <h3>Visual Question Answering</h3>
+        <p>A VQA system combining CLIP and GPT-style architecture to answer natural language questions about images with high accuracy.</p>
+        <div class="project-tags">
+          <span class="tag green">CLIP</span>
+          <span class="tag green">PyTorch</span>
+          <span class="tag">Vision Transformer</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn-outline btn-sm">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
 
-<img src="images/project3.jpg">
+  </div>
 
-<h3>Text Summarization</h3>
-
-<p>Efficient NLP summarization model designed for CPU environments.</p>
-<a href="#">View Project</a>
-
-</div>
-
-</div>
-
+  <!-- GitHub CTA -->
+  <div style="text-align:center; margin-top:4rem;" class="reveal">
+    <p style="color:var(--text-secondary); margin-bottom:1.25rem; font-family:var(--font-mono); font-size:0.85rem;">
+      More projects on GitHub
+    </p>
+    <a href="https://github.com" target="_blank" class="btn">
+      <i class="fab fa-github"></i> View GitHub Profile
+    </a>
+  </div>
 </section>
 
-</body>
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2 class="logo">Prabhat</h2>
+      <p>Building intelligent systems.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:prabhat@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span class="accent">Prabhat Sharma</span>. All rights reserved.</p>
+    <p>Built with <span class="accent">♥</span> and lots of Python</p>
+  </div>
+</footer>
 
+</body>
 </html>
