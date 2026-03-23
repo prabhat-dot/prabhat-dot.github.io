@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Projects by Prabhat Sharma",
-  "url": "https://prabhat-dot.github.io/projects.html",
-  "description": "Explore the projects worked on by Prabhat Sharma, an AI Developer.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Prabhat Sharma"
-  }
-}
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Prabhat Sharma - Projects - AI, Machine Learning, and NLP</title>
-  <meta name="description" content="Explore Prabhat Sharma's AI and ML projects including emotion detection, SEO automation, and NLP systems.">
-  <meta property="og:title" content="Projects | Prabhat Sharma">
-  <meta property="og:description" content="AI and ML projects — from emotion detection to SEO intelligence platforms.">
+  <title>Projects | Prabhat Sharma — AI Developer</title>
+  <meta name="description" content="Explore AI and ML projects by Prabhat Sharma — emotion detection, SEO automation, NLP systems.">
+  <meta property="og:title" content="Projects | Prabhat Sharma — AI Developer">
   <meta property="og:type" content="website">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="js/script.js" defer></script>
+
+  <!-- Google Analytics 4 (GA4) -->
+  <!-- Replace G-ZHM9T8088M with your actual Measurement ID from analytics.google.com -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHM9T8088M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -36,229 +24,142 @@
       send_page_view: true
     });
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Projects | Prabhat Sharma — AI Developer",
+  "url": "https://prabhat-dot.github.io/projects.html",
+  "description": "AI and ML projects by Prabhat Sharma — emotion detection, SEO automation, NLP systems.",
+  "author": {
+    "@type": "Person",
+    "name": "Prabhat Sharma",
+    "url": "https://prabhat-dot.github.io"
+  },
+  "hasPart": [
+    { "@type": "SoftwareApplication", "name": "Emotion Detection System", "applicationCategory": "AI / Deep Learning", "description": "Multimodal AI system detecting emotions from text, images, and video using ensemble deep learning." },
+    { "@type": "SoftwareApplication", "name": "AI SEO Intelligence Platform", "applicationCategory": "AI / NLP", "description": "Automated SEO auditing with keyword clustering, competitor analysis, and content optimization." },
+    { "@type": "SoftwareApplication", "name": "CPU-Efficient Text Summarizer", "applicationCategory": "NLP", "description": "ONNX-optimized NLP summarization achieving near-GPU inference performance on CPU environments." },
+    { "@type": "SoftwareApplication", "name": "Conversational AI Assistant", "applicationCategory": "AI / LLM", "description": "Domain-specific chatbot built with LangChain and RAG architecture." },
+    { "@type": "SoftwareApplication", "name": "Market Sentiment Analyzer", "applicationCategory": "FinTech / NLP", "description": "Real-time financial sentiment analysis using FinBERT." },
+    { "@type": "SoftwareApplication", "name": "Visual Question Answering", "applicationCategory": "Computer Vision", "description": "VQA system combining CLIP and GPT-style architecture." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prabhat-dot.github.io/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://prabhat-dot.github.io/projects.html" }
+  ]
+}
+</script>
 </head>
 <body>
-
 <nav>
   <h2 class="logo">Prabhat</h2>
   <ul id="navMenu">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="projects.html">Projects</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="resume.html">Resume</a></li>
     <li><a href="blog.html">Blog</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="opensource.html">Open Source</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <i class="fas fa-sun"></i>
-    </button>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="contact.html" class="nav-hire">Hire Me</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- Hero -->
-<div class="projects-hero">
+<div class="page-hero">
   <div class="section-label reveal">Portfolio</div>
   <h1 class="title reveal reveal-delay-1">Selected <span>Projects</span></h1>
-  <p style="color:var(--text-secondary); max-width:560px; font-size:1.05rem;" class="reveal reveal-delay-2">
-    A collection of AI systems, ML models, and intelligent applications built to solve real-world challenges.
-  </p>
+  <p style="color:var(--t2);max-width:555px;font-size:1.02rem" class="reveal reveal-delay-2">AI systems, ML models, and intelligent applications built to solve real-world challenges.</p>
 </div>
-
-<!-- Projects Grid -->
-<section style="padding-top: 1rem;">
+<section style="padding-top:1rem">
   <div class="projects-grid">
-
-    <!-- Project 1 -->
     <div class="project-card">
       <div class="project-img-placeholder">🤖</div>
-      <!-- <img src="images/project1.jpg" class="project-img" alt="Emotion Detection System"> -->
       <div class="project-body">
-        <div class="project-number">01</div>
-        <h3>Emotion Detection System</h3>
-        <p>A multimodal AI system that detects human emotions from text, facial images, and video streams using ensemble deep learning models. Achieves 91% accuracy on benchmark datasets.</p>
-        <div class="project-tags">
-          <span class="tag green">PyTorch</span>
-          <span class="tag green">OpenCV</span>
-          <span class="tag">BERT</span>
-          <span class="tag">CNN</span>
-          <span class="tag">Streamlit</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">01</div><h3>Emotion Detection System</h3>
+        <p>Multimodal AI detecting emotions from text, facial images, and video using ensemble deep learning. 91% accuracy on benchmarks.</p>
+        <div class="project-tags"><span class="tag green">PyTorch</span><span class="tag green">OpenCV</span><span class="tag">BERT</span><span class="tag">CNN</span><span class="tag">Streamlit</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="blog-post.html" class="btn-outline btn-sm"><i class="fas fa-book-open"></i> Case Study</a></div>
       </div>
     </div>
-
-    <!-- Project 2 -->
     <div class="project-card">
       <div class="project-img-placeholder">🔍</div>
-      <!-- <img src="images/project2.jpg" class="project-img" alt="AI SEO Platform"> -->
       <div class="project-body">
-        <div class="project-number">02</div>
-        <h3>AI SEO Intelligence Platform</h3>
-        <p>End-to-end automated SEO auditing platform with keyword clustering, content gap analysis, and competitor intelligence — powered by custom NLP pipelines.</p>
-        <div class="project-tags">
-          <span class="tag green">Python</span>
-          <span class="tag green">NLP</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">Scikit-Learn</span>
-          <span class="tag">PostgreSQL</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">02</div><h3>AI SEO Intelligence Platform</h3>
+        <p>End-to-end automated SEO auditing with keyword clustering, content gap analysis, and competitor intelligence powered by custom NLP pipelines.</p>
+        <div class="project-tags"><span class="tag green">Python</span><span class="tag green">NLP</span><span class="tag">FastAPI</span><span class="tag">Scikit-Learn</span><span class="tag">PostgreSQL</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="#" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a></div>
       </div>
     </div>
-
-    <!-- Project 3 -->
     <div class="project-card">
       <div class="project-img-placeholder">📝</div>
-      <!-- <img src="images/project3.jpg" class="project-img" alt="Text Summarization"> -->
       <div class="project-body">
-        <div class="project-number">03</div>
-        <h3>CPU-Efficient Text Summarizer</h3>
-        <p>An optimized NLP summarization model designed for CPU-only environments. Uses ONNX quantization and distillation techniques to achieve near-GPU performance.</p>
-        <div class="project-tags">
-          <span class="tag green">Transformers</span>
-          <span class="tag green">ONNX</span>
-          <span class="tag">HuggingFace</span>
-          <span class="tag">Python</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">03</div><h3>CPU-Efficient Text Summarizer</h3>
+        <p>ONNX-quantized NLP summarization model for CPU-only environments. Achieves near-GPU performance via distillation techniques.</p>
+        <div class="project-tags"><span class="tag green">Transformers</span><span class="tag green">ONNX</span><span class="tag">HuggingFace</span><span class="tag">Python</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="#" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a></div>
       </div>
     </div>
-
-    <!-- Project 4 -->
     <div class="project-card">
       <div class="project-img-placeholder">💬</div>
       <div class="project-body">
-        <div class="project-number">04</div>
-        <h3>Conversational AI Assistant</h3>
-        <p>A domain-specific chatbot built with LangChain and RAG architecture. Provides accurate, context-aware responses from enterprise knowledge bases.</p>
-        <div class="project-tags">
-          <span class="tag green">LangChain</span>
-          <span class="tag green">RAG</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">FAISS</span>
-          <span class="tag">Streamlit</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">04</div><h3>Conversational AI Assistant</h3>
+        <p>Domain-specific chatbot built with LangChain and RAG architecture. Provides context-aware responses from enterprise knowledge bases.</p>
+        <div class="project-tags"><span class="tag green">LangChain</span><span class="tag green">RAG</span><span class="tag">FAISS</span><span class="tag">OpenAI</span><span class="tag">Streamlit</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="#" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a></div>
       </div>
     </div>
-
-    <!-- Project 5 -->
     <div class="project-card">
       <div class="project-img-placeholder">📊</div>
       <div class="project-body">
-        <div class="project-number">05</div>
-        <h3>Market Sentiment Analyzer</h3>
-        <p>Real-time financial sentiment analysis tool that processes news articles, social media, and earnings calls to generate market sentiment scores.</p>
-        <div class="project-tags">
-          <span class="tag green">FinBERT</span>
-          <span class="tag green">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Plotly</span>
-          <span class="tag">FastAPI</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">05</div><h3>Market Sentiment Analyzer</h3>
+        <p>Real-time financial sentiment tool processing news, social media, and earnings calls to generate actionable market sentiment scores.</p>
+        <div class="project-tags"><span class="tag green">FinBERT</span><span class="tag green">Python</span><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">FastAPI</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="#" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a></div>
       </div>
     </div>
-
-    <!-- Project 6 -->
     <div class="project-card">
       <div class="project-img-placeholder">🖼️</div>
       <div class="project-body">
-        <div class="project-number">06</div>
-        <h3>Visual Question Answering</h3>
-        <p>A VQA system combining CLIP and GPT-style architecture to answer natural language questions about images with high accuracy.</p>
-        <div class="project-tags">
-          <span class="tag green">CLIP</span>
-          <span class="tag green">PyTorch</span>
-          <span class="tag">Vision Transformer</span>
-          <span class="tag">Python</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com" target="_blank" class="btn btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" class="btn-outline btn-sm">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
+        <div class="project-number">06</div><h3>Visual Question Answering</h3>
+        <p>VQA system combining CLIP and GPT-style architecture to answer natural language questions about images with high accuracy.</p>
+        <div class="project-tags"><span class="tag green">CLIP</span><span class="tag green">PyTorch</span><span class="tag">Vision Transformer</span><span class="tag">Python</span></div>
+        <div class="project-links"><a href="https://github.com/prabhat-sharma" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a><a href="#" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a></div>
       </div>
     </div>
-
   </div>
-
-  <!-- GitHub CTA -->
-  <div style="text-align:center; margin-top:4rem;" class="reveal">
-    <p style="color:var(--text-secondary); margin-bottom:1.25rem; font-family:var(--font-mono); font-size:0.85rem;">
-      More projects on GitHub
-    </p>
-    <a href="https://github.com" target="_blank" class="btn">
-      <i class="fab fa-github"></i> View GitHub Profile
-    </a>
+  <div style="text-align:center;margin-top:3.8rem" class="reveal">
+    <p style="color:var(--t2);margin-bottom:1.2rem;font-family:var(--ff-mono);font-size:.82rem">More projects on GitHub →</p>
+    <a href="https://github.com/prabhat-sharma" target="_blank" class="btn"><i class="fab fa-github"></i> View GitHub Profile</a>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand">
-      <h2 class="logo">Prabhat</h2>
-      <p>Building intelligent systems.</p>
-    </div>
+    <div class="footer-brand"><h2 class="logo">Prabhat</h2><p>Building intelligent systems.</p></div>
     <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="projects.html">Projects</a><a href="services.html">Services</a>
+      <a href="resume.html">Resume</a><a href="blog.html">Blog</a><a href="testimonials.html">Testimonials</a>
+      <a href="opensource.html">Open Source</a><a href="contact.html">Contact</a>
     </div>
     <div class="footer-social">
-      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:prabhat@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/prabhat-sharma" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/prabhat-sharma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:prabhatindoria2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 <span class="accent">Prabhat Sharma</span>. All rights reserved.</p>
-    <p>Built with <span class="accent">♥</span> and lots of Python</p>
-  </div>
-</footer>
-
-</body>
-</html>
+    <p>© 2025 <span class="ac">Prabhat Sharma</span>. All rights reserved.</p>
+    <p>Built with <span class="ac">♥</span> and lots of Pyt
