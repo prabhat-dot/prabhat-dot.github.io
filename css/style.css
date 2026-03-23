@@ -3,38 +3,8 @@
    Tech-Noir Dark Theme  |  v2.0  |  Unified All-Page CSS
    ============================================================ */
 
-/* Fonts loaded via <link rel=preconnect> in HTML for better performance */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
 
-
-/* ─── PERFORMANCE ─────────────────────────────────────────── */
-/* Reduce layout shift during font load */
-html { font-display: swap; }
-
-/* Disable heavy animations on mobile/low-end devices */
-@media (max-width: 768px) {
-  #particles-js { display: none !important; }
-  .profile-ring { animation-duration: 20s; }
-  * { animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important; }
-  .reveal, .skill-category-card, .project-card,
-  .blog-card, .resume-sec, .repo-card,
-  .contrib-item, .tcard {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
-}
-
-/* Respect user preference for reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  #particles-js { display: none !important; }
-}
 
 /* ─── TOKENS ─────────────────────────────────────────────── */
 :root {
