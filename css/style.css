@@ -3,8 +3,28 @@
    Tech-Noir Dark Theme  |  v2.0  |  Unified All-Page CSS
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+/* Google Fonts loaded via <link> in HTML — faster than @import */
 
+
+
+/* ── PERFORMANCE ───────────────────────────────────────────── */
+/* Disable particles + heavy animations on mobile for faster LCP */
+@media (max-width: 768px) {
+  #particles-js { display: none !important; }
+  .profile-ring { animation-duration: 20s !important; }
+}
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  #particles-js { display: none !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* Prevent layout shift — explicit sizes on profile */
+.profile-wrapper { contain: layout size; }
+.profile-fallback { font-size: clamp(5rem, 15vw, 7rem); }
 
 /* ─── TOKENS ─────────────────────────────────────────────── */
 :root {
